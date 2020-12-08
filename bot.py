@@ -238,9 +238,9 @@ def choose_method():
     if chs == 1:
         print("Which account do you want to create?")
         for i in range(len(email)):
-            print("["+str(i)+"]:>"+email[i])
+            print("["+str(i+1)+"]:>"+email[i])
         print("["+str(len(email))+"]:>All")
-        account = int(input("[*]:>"))
+        account = int(input("[*]:>")) +1
         if account == len(email):
             for i in range(len(email)):
                 try:
@@ -269,9 +269,9 @@ def choose_method():
                 wr.write(opera)
         print("Select account/s to use")
         for i in range(len(username)):
-            print("["+str(i)+"]:>"+username[i])
+            print("["+str(i+1)+"]:>"+username[i])
         print("["+str(len(username))+"]:>All")
-        email_choose = int(input("[*]:>"))
+        email_choose = int(input("[*]:>")) +1
         if email_choose == len(email):
             print("Ok! Collecting all accounts...")
             for i in range(len(email)):
@@ -298,18 +298,19 @@ def choose_method():
         print("COOMING SOON\n")
 
     elif chs == 4:
-        print("Which account do you want to use?")
-        for i in range(len(username)):
-            print("["+str(i)+"]:>"+username[i])
-        print("["+str(len(username))+"]:>All")
-        account = int(input("[*]:>"))
+        #print("Which account do you want to use?")
+        #for i in range(len(username)):
+        #    print("["+str(i)+"]:>"+username[i])
+        #print("["+str(len(username))+"]:>All")
+        #account = int(input("[*]:>"))
+        print("COOMING SOON\n")
 
     elif chs == 5:
         print("Which account do you want to use?")
         for i in range(len(username)):
-            print("["+str(i)+"]:>"+username[i])
+            print("["+str(i+1)+"]:>"+username[i])
         print("["+str(len(username))+"]:>All")
-        account = int(input("[*]:>"))
+        account = int(input("[*]:>")) +1
         print("Do you want to change message file?",end="")
         msg_c = input("(Yes/No/Show)").lower()
         if msg_c == "y" or msg_c == "yes":
@@ -348,17 +349,17 @@ def choose_method():
     elif chs == 6:
         print("Which account do you want to use?")
         for i in range(len(username)):
-            print("["+str(i)+"]:>"+username[i])
+            print("["+str(i+1)+"]:>"+username[i])
         print("["+str(len(username))+"]:>All")
-        account = int(input("[*]:>"))
+        account = int(input("[*]:>")) + 1
 
     elif chs == 7:
         print("Choose account to gain followers:")
         acc_follw = input("[*]:>")
         print("Which account do you want to use?")
         for i in range(len(username)):
-            print("["+str(i)+"]:>"+username[i])
-        account = int(input("[*]:>"))
+            print("["+str(i+1)+"]:>"+username[i])
+        account = int(input("[*]:>")) +1
         print("Gain followers from "+acc_follw+" with user "+username[account])
         print("Try to Log In..........")
         #try:
