@@ -255,8 +255,6 @@ def choose_method():
                 create_user = Create_Account(email[account],passwd[account],username[account])
                 print("Account "+email[account]+" created!\n")
 
-                print("""
-                LAVORI IN CORSO\t\tQUASI FINITO""")
             except:
                 print("Something goes wrong.... Aborting...")
     elif chs == 2:
@@ -281,7 +279,7 @@ def choose_method():
                     pictures_add = Add_photo(username[i],passwd[i])
                     print("Pictures added correctly\n")
                 except:
-                    print("Enable to Log In... Search for another username/passwd......\n")
+                    print("Something goes wrong... Search for another username/passwd......\n")
             print("Exec ended!\nBye!!!")
 
         else:
@@ -298,11 +296,6 @@ def choose_method():
         print("COOMING SOON\n")
 
     elif chs == 4:
-        #print("Which account do you want to use?")
-        #for i in range(len(username)):
-        #    print("["+str(i)+"]:>"+username[i])
-        #print("["+str(len(username))+"]:>All")
-        #account = int(input("[*]:>"))
         print("COOMING SOON\n")
 
     elif chs == 5:
